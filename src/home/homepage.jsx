@@ -6,7 +6,7 @@ import ReactDOM from "react-dom/client"
 function HomePage(props) {
     return (
         <div>
-            <div className="homepage-icon" />
+            <div className="homepage-icon" id="antfans-icon" />
         </div>
     )
 }
