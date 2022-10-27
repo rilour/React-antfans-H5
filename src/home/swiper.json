@@ -1,0 +1,23 @@
+{
+  "resultStatus": 1000,
+  "result": {
+    "bannerList": [
+      {
+        "configurationNo": "202206150300001001068",
+        "configurationTitle": "成为数字收藏家",
+        "configurationType": "BANNER",
+        "imageUrl": "https://mdn.alipayobjects.com/rms/afts/img/A*1waZSaRpKqIAAAAAAAAAAAAAARQnAQ/original",
+        "jumpUrl": "https://render.alipay.com/p/yuyan/180020570000002509-prod/index.html"
+      },
+      {
+        "configurationNo": "202206150300006596075",
+        "configurationTitle": "购买及转赠须知",
+        "configurationType": "BANNER",
+        "imageUrl": "https://mdn.alipayobjects.com/rms/afts/img/A*WdjBQYXG5cYAAAAAAAAAAAAAARQnAQ/original",
+        "jumpUrl": "https://render.alipay.com/p/yuyan/180020570000002508-prod/index.html"
+      }
+    ],
+    "bizStatusCode": 10000,
+    "bizStatusMessage": "成功"
+  }
+}
