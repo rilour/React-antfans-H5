@@ -2,6 +2,7 @@ import React from 'react'
 import { Swiper } from 'antd-mobile'
 import data from './swiper.json'
 
+
 const items = data.result.bannerList.map((item, index) => (
     <img 
         className="swiper-img"
@@ -15,11 +16,11 @@ const items = data.result.bannerList.map((item, index) => (
 
 function HomeSwiper() {
     return (
-        <Swiper autoplay={true} slideSize={80} stuckAtBoundary={false}>{items}</Swiper>
+        <Swiper autoplay={true} slideSize={85} stuckAtBoundary={false}>{items}</Swiper>
 
     )
 }
 
 
 
-export default HomeSwiper()
+export default HomeSwiper

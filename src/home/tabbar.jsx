@@ -1,6 +1,6 @@
 import React from "react";
 import { UserOutline, AppOutline, AppstoreOutline, PictureOutline  } from 'antd-mobile-icons';
-import { Router, Routers, useLocation, useNavigate} from "react-router-dom"
+import { Route, Routes, useLocation, useNavigate} from "react-router-dom"
 
 
 function TabBar (props) {
@@ -8,13 +8,18 @@ function TabBar (props) {
     const {pathname} = useLocation()
     return (
         <div className="tabBar">
-            <Routers>
-                <Router path='/' element={<Home />}></Router>
-                <Router path='/discovery' element={<Discovery />}></Router>
-                <Router path='/collection' element={<Collection />}></Router>
-                <Router path='/mine' element={<Mine />}></Router>
-            </Routers>
-            <TabBar>
+            <button onClick={ () => {navigate('/')} }>首页</button>
+            <button onClick={ () => {navigate('/discovery')}}>发现</button>
+            <button onClick={ () => {navigate('/collection')} }>收藏</button>
+            <button onClick={ () => {navigate('/mine')} }>我的</button>
+
+            <Routes>
+                <Route path='/' element={<Home />}></Route>
+                <Route path='/discovery' element={<Discovery />}></Route>
+                <Route path='/collection' element={<Collection />}></Route>
+                <Route path='/mine' element={<Mine />}></Route>
+            </Routes>
+            <TabBar className='tabbar' activeKey={pathname} onchange={(key) => {navigate(key)}} >
                 <TabBar.item title="首页" key='/' icon={<AppOutline />} />
                 <TabBar.item title="发现" key='/discovery' icon={<AppstoreOutline />} />
                 <TabBar.item title="收藏" key='/collection' icon={<PictureOutline />} />
