@@ -7,7 +7,7 @@ function TabBar (props) {
     const navigate = useNavigate()
     const {pathname} = useLocation()
     return (
-        <div className="tabBar">
+        <div className="tabbar">
             <button onClick={ () => {navigate('/')} }>首页</button>
             <button onClick={ () => {navigate('/discovery')}}>发现</button>
             <button onClick={ () => {navigate('/collection')} }>收藏</button>

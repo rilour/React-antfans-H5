@@ -1,17 +1,21 @@
 import React from 'react'
 import { Swiper } from 'antd-mobile'
 import data from './swiper.json'
+import { Route } from 'react-router-dom'
 
 
 const items = data.result.bannerList.map((item, index) => (
-    <img 
-        className="swiper-img"
-        id={item.configurationNo} 
-        src={item.imageUrl} 
-        onClick={() => {<Link to={item.jumpUrl} />}}
-    >
-    {item.configurationTitle}
-    </img>
+    <Route>
+        <img 
+            className="swiper-img"
+            id={item.configurationNo} 
+            src={item.imageUrl} 
+            onClick={() => {<Link to={item.jumpUrl} />}}
+        >
+        {item.configurationTitle}
+        </img>
+    </Route>
+
 ))
 
 function HomeSwiper() {

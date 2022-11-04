@@ -1,9 +1,11 @@
 import { Card } from "antd-mobile"
 import { Route, Routes, useNavigate, useLocation } from "react-router-dom"
-import data from './digitCollection.json'
+import data1 from './digitCollection.json'
 import data2 from './digitCollection1.json'
 
-const items = data.result.itemViewList.map((item, index) => {
+const data = data1.data.result.itemViewList.concat(data2.data.result.itemViewList)
+
+const items = data.map((item, index) => {
     <div className="digitcollection">
         <img className="digitcolleciton-citem" src={item.itemCoverImg} />
         <div className="digitcollection-item" id={item.itemId}>
@@ -21,13 +23,11 @@ function DigitCollection() {
 
     return (
         <>
-            <div >
-                <Card title={items}></Card>
-            </div>
+            <Card title={items}></Card>
         </>
     )
 }
 
-
+export default DigitCollection
 
 
