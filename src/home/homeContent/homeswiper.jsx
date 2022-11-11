@@ -1,6 +1,6 @@
 import React from 'react'
 import { Swiper } from 'antd-mobile'
-import data from './swiper.json'
+import data from '../swiper.json'
 import { Route } from 'react-router-dom'
 
 

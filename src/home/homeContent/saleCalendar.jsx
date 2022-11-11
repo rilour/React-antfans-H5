@@ -13,7 +13,8 @@ const items = data.result.calendarVOList.map((item, index)=> {
                     <div className="sale-calendar-item">{item.itemTitle}</div>
                     <div className="sale-calendar-limit">限量</div>
                     <div className="sale-calendar-quantity">{item.quantity}份</div>
-                    <div className="sale-calendar-price">{item.price}</div>
+                    <div className="sale-calendar-price">￥ {item.price}</div>
+                    <div className="sale-calendar-sale">开售提醒</div>
                 </>
 
             }
