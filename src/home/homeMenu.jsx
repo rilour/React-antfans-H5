@@ -21,10 +21,10 @@ function HomeMenu () {
                 <Route path='/mine' element={<Mine />}></Route>
             </Routes>
             <TabBar className='tabbar' activeKey={pathname} onChange={(key) => {navigate(key)}} >
-                <TabBar.Item title="首页" key='/' icon={<AppOutline />} />
-                <TabBar.Item title="发现" key='/discovery' icon={<AppstoreOutline />} />
-                <TabBar.Item title="收藏" key='/collection' icon={<PictureOutline />} />
-                <TabBar.Item title="我的" key='/mine' icon={<UserOutline />} />
+                <TabBar.Item className='tabbaritem home' title="首页" key='/' icon={<AppOutline />} />
+                <TabBar.Item className='tabbaritem discovery' title="发现" key='/discovery' icon={<AppstoreOutline />} />
+                <TabBar.Item className='tabbaritem collection' title="收藏" key='/collection' icon={<PictureOutline />} />
+                <TabBar.Item className='tabbaritem mine' title="我的" key='/mine' icon={<UserOutline />} />
             </TabBar>
         </div>
 

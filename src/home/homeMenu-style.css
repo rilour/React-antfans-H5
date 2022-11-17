@@ -1,8 +1,19 @@
+.home-menu { 
+    
+}
+
 .tabbar {
     position: fixed;
-    bottom: 40px;
+    bottom: 5vh;
     left: 0;
+    max-width: 1280px;
+    max-height: 80px;
     width: 100vw;
-    height: 25px;
+    height: auto;
 
+
+}
+
+.tabbaritem:hover {
+    filter: drop-shadow(0 0 2em rgba(212, 212, 212, 0.8));
 }
