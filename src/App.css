@@ -1,26 +1,22 @@
-#root {
-  max-width: 1280px;
-  width: 100vw;
-  margin: 0 auto;
-  padding: 2vw;
-
-}
-
-.body {
-  width: 100vw;
-  font-size: var(--main-font-size);
-  color: var(--font-color-white);
-  
-}
-
 :root {
-  --main-bg-color-dark: rgb(50, 60, 50) ;
+  --main-bg-color-black: rgb(30, 36, 30) ;
+  --main-bg-color-dark: rgb(40, 48, 40) ;
   --main-bg-color-light: rgb(100, 100, 100) ;
-  --main-font-size: 24px;
-  --main-font-size-mini: 12px;
-  --main-font-size-big: 30px;
 
   --font-color-gray: rgb(180 180 180);
   --font-color-white: rgb(255 255 255);
 
+  --main-font-size: 24px;
+  --main-font-size-mini: 12px;
+  --main-font-size-big: 30px;
+
+
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: var(--main-font-size);
+  color: var(--font-color-white);
+  background-color: var(--main-bg-color-dark);
 }

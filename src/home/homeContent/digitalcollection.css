@@ -1,67 +1,77 @@
-.digitcollection {
-    width: 100vw;
-    max-width: 100%;
-    text-align: center;
+.digitcollection .card{
+    margin: 0;
+    padding: 0;
+    background-color: var(--main-bg-color-black);
 }
 
 .digitcollection-content {
-    display: block;
     background-color: var(--main-bg-color-dark);
-    border-radius: 20px;
+    border-radius: 2em;
     margin: 5vw;
 }
 
 .digitcollection-img {
-    display: block;
-    border-radius: 20px;
+    border-radius: 2em;
     width: 100%;
     height: auto;
 
 }
 
 .digitcollection-profile {
+    position: relative;
     padding: 1em;
 }
 .digitcollection-item {
     color: var(--font-color-white);
+    margin: 0.5em 0;
 }
 
 .digitcollection-itemnum{
-    display: block;
+    display: flex;
+    margin: 1em 0;
+
 }
 .digitcollection-limit{
-    padding: 3px;
+    width: auto;
+    padding: 0 0.5em;
     background-color: rgb(212, 212, 160);
     color: rgb(0, 0, 0);
     font-size: var(--main-font-size-mini);
 }
 .digitcollection-num {
-    padding: 3px;
+    width: auto;
+    padding: 0 0.5em;
     background-color: rgb(120 120 120);
     color:rgb(212, 212, 160);
     font-size: var(--main-font-size-mini);
 
 }
 
-.digitcollection-creator {
-    display: inline;
+.digitcollection-info {
+    display: flex;
+    justify-content: space-between;
 }
-.digitcollection-avatar{
+.digitcollection-creator {
+    display: flex;
+    text-align: center;
+}
+.digitcollection-creator-avatar{
+
     border: 12px;
     border-radius: 50%;
-    width: 100%;
-    height: auto;
+    width: 12px;
+    height: 12px;
+    
 }
 .digitcollection-creator-name {
+    width: auto;
     font-size: var(--main-font-size-mini);
     color: var(--font-color-gray);
     margin-left: 1em;
 }
-
 .digitcollection-price {
     font-size: var(--main-font-size-big);
-    position: absolute;
-    right: 0;
-    bottom: 0;
-
+    color: aliceblue;
+    position: relative;
+    bottom: 0.5em;
 }
