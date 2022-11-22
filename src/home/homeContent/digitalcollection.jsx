@@ -38,7 +38,7 @@ function DigitCollection() {
     return (
         <div className="digitcollection">
             <AutoCenter>
-                <Card  headerClassName="card" title={ items }></Card>
+                <Card  headerClassName="card" bodyClassName="card" title={ items }></Card>
 
             </AutoCenter>
             {/* <div className="card">{items}</div> */}

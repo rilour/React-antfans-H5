@@ -6,7 +6,11 @@ module.exports = {
           return file?.includes('vant') ? 375 : 750
         },
         propList: ['*', '!font*', '!line-height', '!letter-spacing'],
-        selectorBlackList: ['digitcollection-creator-avatar', 'tabbar', 'tabbaritem', 'home-menu'],
+        selectorBlackList: ['digitcollection-creator-avatar', 'tabbar', 'adm-tab-bar-item-icon'],
       },
     },
   }
+
+
+
+  

@@ -1,4 +1,5 @@
 :root {
+
   --main-bg-color-black: rgb(30, 36, 30) ;
   --main-bg-color-dark: rgb(40, 48, 40) ;
   --main-bg-color-light: rgb(100, 100, 100) ;
@@ -20,3 +21,4 @@ body {
   color: var(--font-color-white);
   background-color: var(--main-bg-color-dark);
 }
+
